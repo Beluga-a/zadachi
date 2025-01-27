@@ -28,9 +28,6 @@ console.log(okaka);
 */
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2задание~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-
-
-
 /*
 let myInfoText = 'JavaScript'
 myInfoText2 = myInfoText.replaceAll("JavaScript", 'JAVASCRIPT'.toUpperCase())
@@ -46,81 +43,50 @@ console.log(myInfoText[0]);
 console.log(myInfoText[myInfoText.length - 1]);
 */
 
-
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~3задание~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 /*const userName = prompt("Как вас зовут?");
+
 const formattedUserName = userName.trim().toLowerCase();
+
 alert(`Вас зовут ${formattedUserName}`);*/
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~4задание~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 /*
-let userName = prompt("Как вас зовут?").trim();
+const userName = prompt("Как вас зовут?"); 
 
-let userAge = prompt("Сколько вам лет?").trim();
+const userAge = Number(prompt("Сколько вам лет?").replaceAll(" ", "")); 
 
-userAge = Number(userAge);
+const noSpaces = userName.trim().toLowerCase(); 
 
-if (userName && !isNaN(userAge)) {
-    alert(`Вас зовут ${userName} и вам ${userAge} лет`);
-} else {
-    alert("Некорректный ввод данных");
-}  
+console.log(noSpaces); 
+
+alert("Вас зовут " + noSpaces + " и вам " + userAge + " лет");
 */
 
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~5задание~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-
-
-/*let userString = prompt("Введите текст для обрезки").trim();
-
-let startSliceIndex = prompt("Введите индекс, с которого нужно начать обрезку строки").trim();
-
-let endSliceIndex = prompt("Введите индекс, которым нужно закончить обрезку строки").trim();
-
-startSliceIndex = Number(startSliceIndex);
-endSliceIndex = Number(endSliceIndex);
-
-if (userString && !isNaN(startSliceIndex) && !isNaN(endSliceIndex)) {
-    let resultString = userString.slice(startSliceIndex, endSliceIndex);
-    alert(`Результат: ${resultString}`);
-} else {
-    alert("Некорректный ввод данных");
-}*/
-
+/*
+let UserString = prompt("Введите строку необходимую для обрезки").trim(); 
+let startInput = prompt( 
+  "Введите индекс с которого нужно начать обрезку строки" 
+); 
+let endInput = prompt("Введите индекс с которого нужно начать обрезку строки"); 
+start = Number(startInput); 
+end = Number(endInput); 
+string = UserString.substring(start, end); 
+alert(string);
+*/
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~6задание~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+/*
+let Usertext = prompt("Введите текст"); 
 
-/*let userText = prompt("Введите текст").trim();
+let wordFromText = prompt("Введите слово из текста").trim(); 
 
-let wordsFromText = prompt("Введите слово из текста").trim();
+let index = Usertext.indexOf(wordFromText); 
 
-let. indexOfWord = userText.indexOf(wordsFromText);
+string = Usertext.substring(0, index); 
 
-if (userText && wordsFromText && indexOfWord !== -1) {
-    let resultString = userText.slice(0, indexOfWord);
-    alert(`Результат: ${resultString}`);
-} else {
-    alert("Некорректный ввод данных или слово не найдено в тексте");
-}*/
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~6задание~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-
-/*let javaScriptDescription = "JavaScript - мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили. Является реализацией спецификации ECMAScript. JavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений.";
-
-let midIndex = Math.floor(javaScriptDescription.length / 2);
-let slicedString = javaScriptDescription.slice(0, midIndex);
-
-let replacedString = slicedString.replace(/а/g, "А");
-
-let stringWithoutSpaces = replacedString.replace(/\s/g, "");
-
-let tripledString = stringWithoutSpaces.repeat(3);
-
-let middleCharIndex = Math.floor(tripledString.length / 2);
-let middleChar = tripledString.charAt(middleCharIndex);
-
-console.log(tripledString);
-alert(`Символ в середине строки: ${middleChar}`);*/
+alert(string);
+*/  
