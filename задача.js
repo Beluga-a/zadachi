@@ -89,4 +89,14 @@ let index = Usertext.indexOf(wordFromText);
 string = Usertext.substring(0, index); 
 
 alert(string);
-*/  
+
+
+
+
+
+
+const someText = "Никита";
+const form = someText.length;
+const long = form / 2;
+console.log(someText[2])
+console.log(long);*/
